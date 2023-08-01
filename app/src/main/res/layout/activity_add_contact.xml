@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 姓名输入框 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="370dp"
+        android:src="@drawable/contact_add_back" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="姓名" />
+
+    <!-- 电话号码输入框 -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="phone"
+        android:hint="电话号码" />
+
+    <!-- 添加按钮 -->
+    <Button
+        android:id="@+id/btnAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="添加联系人" />
+
+</LinearLayout>
