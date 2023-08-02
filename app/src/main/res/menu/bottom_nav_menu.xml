@@ -1,0 +1,23 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 相册选项 -->
+    <item
+        android:id="@+id/menu_gallery"
+        android:icon="@drawable/album"
+        android:title="相册" />
+
+    <!-- 拍照选项 -->
+    <item
+        android:id="@+id/menu_camera"
+        android:icon="@drawable/camera"
+        android:title="拍照" />
+
+    <!-- 视频录制选项 -->
+    <item
+        android:id="@+id/menu_video"
+        android:icon="@drawable/video"
+        android:title="视频" />
+
+</menu>

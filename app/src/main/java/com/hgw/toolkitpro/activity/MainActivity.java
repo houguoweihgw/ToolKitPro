@@ -17,6 +17,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0:
-                        Intent intent = new Intent(MainActivity.this, ContactsActivity.class);
+                        intent = new Intent(MainActivity.this, ContactsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(MainActivity.this, CameraActivity.class);
                         startActivity(intent);
                         break;
                 }
@@ -43,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private List<ToolItem> getToolList() {
         List<ToolItem> toolList = new ArrayList<>();
         toolList.add(new ToolItem(R.drawable.contacts, "联系人"));
-        toolList.add(new ToolItem(R.drawable.todo, "待开发"));
+        toolList.add(new ToolItem(R.drawable.camera_tool, "相机"));
         toolList.add(new ToolItem(R.drawable.todo, "待开发"));
         toolList.add(new ToolItem(R.drawable.todo, "待开发"));
         toolList.add(new ToolItem(R.drawable.todo, "待开发"));
